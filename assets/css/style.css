@@ -4,76 +4,32 @@
 body {
     margin: 0;
     padding: 0;
+    transform-origin: 0 0;
+    /* zoom: 0.8; */
     background-color: #F5F3EF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    /* zoom: 0.8;
-    transform-origin: 0 0; */
 }
 
 /* @media (max-width: 1280px) { 
     body {
-        zoom: 0.6;
+        zoom: 0.8;
     }
-}
+} */
 
-@media (max-width: 640px) { 
+/* @media (max-width: 640px) { 
     body {
         zoom: 0.35;
     }
 } */
 
-#nav-bar {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-    /* padding-right: 100px; */
-    /* padding-bottom: 80px; */
-}
-
-#name {
-    display: flex;
-    flex-direction: column;
-    /* align-items: start; */
-    align-content: center;
-    margin: 0px;
-    /* justify-content: baseline; */
-}
-
-#nav-txt {
-    display: flex;
-    align-items: center;
-}
-
-#greeting {
-    display: flex;
-    justify-content: center;
-    /* flex-direction: row;
-    align-items: flex-start; */
-    /* margin-top: 15px; */
-}
-
-#greeting div {
-    padding: 10% 5% 5% 5%;
-    /* padding: 20px; */
-    width: 35%;
-}
-
-.footer {
-    padding-top: 100px;
-    width: 100%;
-}
-
+/* text */
 p, a {
     font-family: "Work Sans";
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.125em;
     text-decoration: none;
     color: #000000;
 }
@@ -99,17 +55,70 @@ h3 {
 
 .descr {
     font-style: italic;
-    font-size: 14px;
+    margin: 0px;
+    /* font-size: 14px; */
 }
 
 a.nav-item {
     font-family: 'Righteous';
-    font-size: 18px;
+    font-size: 1.25em;
     padding-left: 40px;
     padding-right: 40px;
     /* padding: 3px 30px; */
     /* border-radius: 10px; */
     /* width: 100%; */
+}
+
+/* navigation menu */
+
+#nav-bar {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    /* padding-right: 100px; */
+    /* padding-bottom: 80px; */
+    /* flex-wrap: wrap; */
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    align-content: center;
+    margin: 0px;
+    /* justify-content: baseline; */
+    min-width: 300px;
+}
+
+#nav-txt {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#greeting {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: row;
+    align-items: flex-start; */
+    /* margin-top: 15px; */
+    max-width: 1200px;
+}
+
+#greeting div {
+    padding: 10% 5% 5% 5%;
+    /* padding: 20px; */
+    width: 35%;
+    min-width: 400px;
+}
+
+.footer {
+    padding-top: 100px;
+    width: 100%;
 }
 
 a.active-button {
@@ -135,9 +144,9 @@ a.active-button {
 }
 
 #waving-gif {
+    margin-top: 5%;
     width: 40%;
-    /* width: 408px; 
-    height: 660px; */
+    min-width: 480px;
 }
 
 /* huh */
@@ -165,54 +174,62 @@ hr {
 #me {
     width: 30%;
     height: 30%;
-    border-radius: 18px;
+    border-radius: 1.125em;
     /* margin: 5%; */
     margin: 10% 5% 5% 5%;
     /* margin: 100px 5% 5% 5%; */
+    min-width: 350px;
 }
 
 #dogs {
     width: 30%;
     /* temp fix */
-    padding-left: 30%; 
+    padding-left: 35%; 
 }
 
 #project-holder {
     display: flex;
     flex-direction: column;
-    /* padding: 8%; */
     /* padding-top: 15%; */
-    /* border-color: aqua;
-    border-width: 3px;
-    border-style: dashed; */
-    align-items: center;
-    /* justify-content: space-between; */
+   
+    /* align-items: center; */
+    
     /* padding-left: 30px; */
 }
 
 .proj {
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    margin: 80px 20px 40px 20px;
+    /* width: 40%; */
+    max-width: 550px;
+    /* padding: 80px; */
     /* padding: 60px; */
+    flex-basis: 50%;
+    /* border-color: #687EB2;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 22px 22px 22px 22px ; */
 }
 
 .section {
     display: flex;
-    /* padding-left: 30px; */
     flex-wrap: wrap;
-    /* need grow???
-    see https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row
-    */
-    justify-content: center;
+    /* justify-content: center; */
+    /* need to change 2 per row --> 1 per row for mobile */
+    max-width: 1200px;
 }
 
 .proj a img {
-    border-radius: 18px;
+    border-radius: 18px 18px 18px 18px;
     /* width: 70%; */
 }
 
 #project-holder h2{
-    align-self: flex-start;
-    margin: 100px 0px 0px 100px;
+    /* align-self: flex-start; */
+    margin: 100px 0px 0px 20px;
+}
+
+#project-holder h3 {
+    margin-top: 25px;
 }
