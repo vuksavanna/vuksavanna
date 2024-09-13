@@ -19,7 +19,7 @@ body {
 
 @media (max-width: 640px) { 
     body {
-        zoom: 0.6;
+        zoom: 0.8;
     }
     .section {
         justify-content: center;
