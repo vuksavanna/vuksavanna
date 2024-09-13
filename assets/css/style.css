@@ -19,7 +19,7 @@ body {
 
 @media (max-width: 640px) { 
     body {
-        zoom: 0.4;
+        zoom: 0.6;
     }
     .section {
         justify-content: center;
@@ -213,14 +213,13 @@ hr {
 .section {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* need to change 2 per row --> 1 per row for mobile */
     max-width: 1200px;
 }
 
 .proj a img {
     border-radius: 18px 18px 18px 18px;
     /* width: 70%; */
+    /* width: 100%; */
 }
 
 #project-holder h2{
