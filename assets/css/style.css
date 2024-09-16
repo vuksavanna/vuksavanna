@@ -67,9 +67,6 @@ a.nav-item {
     font-size: 35px;
     padding-left: 40px;
     padding-right: 40px;
-    /* padding: 3px 30px; */
-    /* border-radius: 10px; */
-    /* width: 100%; */
 }
 
 /* navigation menu */
@@ -92,7 +89,8 @@ a.nav-item {
     align-content: center;
     margin: 0px;
     /* justify-content: baseline; */
-    min-width: 300px;
+    /* min-width: 300px; */
+    white-space: nowrap;
 }
 
 #nav-txt {
@@ -130,25 +128,15 @@ a.nav-item {
 
 a.active-button {
     color: #37569E;
-    /* color: #FFFFFF;
-    background-color: #37569E;
-    border-radius: 10px;
-    padding: 3px 20px;
-    border-radius: 10px; */
-    /* left: 470px; top: 41px; width: 84px; height: 27px; z-index: 302; border-radius: 10px; */
 }
 
 #nav-bar a:hover:not(.active-button) {   
     color: #687EB2;
-    /* transition-delay: 0.2s;
-    transition-timing-function: ease; */
-    /* border-radius: 20px;
-    padding: 15px 30px; */
 }
 
-#name p {
+/* #name p {
     margin: 0px;
-}
+} */
 
 #waving-gif {
     margin-top: 5%;
@@ -177,7 +165,6 @@ hr {
 #me {
     width: 40%;
     height: 40%;
-    border-radius: 1.125em;
     /* margin: 5%; */
     margin: 10% 5% 5% 5%;
     /* margin: 100px 5% 5% 5%; */
@@ -190,7 +177,7 @@ hr {
     padding-left: 20%; 
 }
 
-#project-holder {
+#project-holder, #project-page {
     display: flex;
     flex-direction: column;
     /* padding-top: 15%; */
@@ -217,10 +204,9 @@ hr {
     max-width: 1200px;
 }
 
-.proj a img {
-    border-radius: 18px 18px 18px 18px;
-    /* width: 70%; */
-    /* width: 100%; */
+img {
+    border-radius: 20px;
+
 }
 
 #project-holder h2{
@@ -241,3 +227,41 @@ hr {
 /* .dropdown-menu {
     https://www.w3schools.com/howto/howto_js_dropdown.asp
 } */
+
+/* project pages */
+.banner {
+    margin-top: 10%;
+    
+}
+
+.project-pg h1 {
+    color: #000000;
+    /* padding-bottom: 2%; */
+}
+
+.project-pg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    /* width: 100%; */
+    padding: 5% 0% 5% 0%;
+}
+
+.brief {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    /* padding-left: 5%; */
+    padding-right: 5%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0% 5% 0% 5%; */
+    max-width: 1000px;
+}
