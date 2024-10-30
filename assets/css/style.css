@@ -30,11 +30,16 @@ body {
 /* text */
 p, a {
     font-family: "Work Sans";
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 400;
+    font-style: light;
     font-size: 18px;
     text-decoration: none;
     color: #000000;
+}
+
+#title {
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* a:hover:not(.active-button) {
@@ -177,14 +182,10 @@ hr {
     padding-left: 20%; 
 }
 
+/* work-projs */
 #project-holder, #project-page {
     display: flex;
     flex-direction: column;
-    /* padding-top: 15%; */
-   
-    /* align-items: center; */
-    
-    /* padding-left: 30px; */
 }
 
 .proj {
@@ -206,7 +207,6 @@ hr {
 
 img {
     border-radius: 20px;
-
 }
 
 #project-holder h2{
@@ -229,26 +229,39 @@ img {
 } */
 
 /* project pages */
-.banner {
-    margin-top: 10%;
-    
-}
-
-.project-pg h1 {
-    color: #000000;
-    /* padding-bottom: 2%; */
-}
-
 .project-pg {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.banner {
+    margin-top: 10%;
+    width: 90%;
+    
+}
+
+/* .project-pg div {
+    width: 85%;
+    padding: 5% 0% 5% 0%;
+} */
+
+.project-pg h1 {
+    color: #000000;
+    /* padding-bottom: 2%; */
+}
+
+.project-pg img {
+    width: 90%;
+}
+
+.intro, .body {
+    width: 85%;
+    padding: 5% 0% 5% 0%;
+}
+
 .intro {
     display: flex;
-    /* width: 100%; */
-    padding: 5% 0% 5% 0%;
 }
 
 .brief {
@@ -265,3 +278,80 @@ img {
     /* padding: 0% 5% 0% 5%; */
     max-width: 1000px;
 }
+
+.gallery {
+    padding: 5%;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+    /* flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center; */
+    /* position: relative; */
+}
+
+/* https://css-tricks.com/almanac/properties/p/position/ */
+.gallery img {
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+
+
+
+
+
+
+
+
+/* test fr w3 */
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+    padding: 5%;
+  }
+  
+/* Create four equal columns that sits next to each other */
+.gallery-col {
+    /* display: flex;
+    flex-direction: column; */
+
+    flex: 30%;
+    max-width: 30%;
+    /* padding: 0 4px; */
+    margin: 1%;
+}
+  
+.gallery-col img {
+    /* margin-top: 8px; */
+    /* vertical-align: middle; */
+    width: 100%;
+
+    /* width: 30%;
+    height: 30%; */
+    margin: 1%;
+}
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .gallery-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .gallery-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
